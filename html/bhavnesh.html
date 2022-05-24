@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="inp">
+    <button type="submit" onclick="fun()">Submit</button>
+
+    <table border="2px">
+        <!-- <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button type="submit" onclick="fun()">Submit</button> -->
+
+        <script>
+            // function fun() {
+            //     var input1 = document.getElementById("inp1").value;
+            //     var input2 = document.getElementById("inp2").value;
+            //     var res = input1 * input2;
+            //     document.write(res);
+
+
+            // }
+
+
+
+
+            function fun() {
+
+                var input = document.getElementById("inp").value;
+
+                for (var i = 1; i <= input; i++) {
+
+                    document.write("<tr>" + "<td>" + input + "</td>" + "<td>" + "+" + "</td>" + "<td>" + i + "</td>" + "<td>" + "=" + "</td>" + "<td>" + input * i + "</td>" + " </tr > ");
+                }
+
+
+                if (i % 2 == 0) {
+
+                }
+            }
+        </script>
+
+    </table>
+
+
+</body>
+
+</html>

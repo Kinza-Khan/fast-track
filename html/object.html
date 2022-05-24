@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var products = {
+        //         Product_Name: " Shirt",
+        //         product_Price: "1000",
+        //         Product_Size: "xl"
+
+
+        //     }
+        // document.write(products.Product_Name + " " + products.product_Price + " " + products.Product_Size);
+        // document.write("<br>");
+
+
+        for (i in products) {
+            document.write(products[i] + " ");
+
+        }
+    </script>
+
+
+
+    <!-- constructor function -->
+
+    <script>
+        // var std = {
+        //     Name: " Abdul",
+        //     Last_Name: "hadi",
+        //     email: "abc@gmail.com",
+        //     class: "4th"
+
+
+        // }
+        // var std2 = {
+        //     Name: " Abdul",
+        //     Last_Name: "hadi",
+        //     email: "abc@gmail.com",
+        //     class: "4th"
+
+
+        // }
+
+
+        function Std(name, lname, email, cls) {
+
+            this.First_Name = name;
+            this.Last_Name = lname;
+            this.Email = email;
+            this.class = cls;
+
+        }
+        var std1 = new Std("hassan", "khan", "abc@gmail.com", "4");
+        var std2 = new Std("Ali", "Ahmed", "xyz@gmail.com", "5");
+        for (i in std1) {
+            document.write(std1[i] + " ");
+        }
+        for (j in std2) {
+            document.write("<BR>" + std2[j] + " ");
+        }
+    </script>
+
+</body>
+
+</html>

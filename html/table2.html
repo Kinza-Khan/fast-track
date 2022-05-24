@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        thead tr {
+            background-color: black;
+            color: white;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+        }
+        
+        td:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        th:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="2px">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>DOB</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Ali</td>
+                <td>aLi@gmail.com</td>
+                <td rowspan="3">Karachi</td>
+                <td>Pakistan</td>
+                <td>5-january-1999</td>
+            </tr>
+            <tr>
+                <td>Hassan</td>
+                <td>Hassan@gmail.com</td>
+
+                <td>Pakistan</td>
+                <td>12-Feb-1998</td>
+            </tr>
+            <tr>
+                <td>sana</td>
+                <td>sana@gmail.com</td>
+
+                <td>Pakistan</td>
+                <td>6-june-1997</td>
+            </tr>
+
+            <tr>
+                <td colspan="5" style="text-align: center">End</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function() {
+            $(".main").css({
+                "height": "200px",
+                "width": "200px",
+                "border": "1 px solid blue ",
+                "background-color": "pink"
+            });
+
+            $(".btn1").click(function() {
+                $(".para").hide();
+            });
+
+
+
+            $(".btn2").click(function() {
+                $(".para").show();
+            });
+
+        });
+    </script>
+
+
+    <div class="main">
+
+    </div>
+    <button class="btn1">Hide</button>
+    <button class="btn2">Show</button>
+    <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae veritatis porro blanditiis sunt facere, ab magnam quibusdam repellat quas dolorum temporibus aliquam minus voluptate debitis ut architecto corporis nam!</p>
+
+
+
+
+
+
+</body>
+
+</html>

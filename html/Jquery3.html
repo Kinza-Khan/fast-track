@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container c" id="p">
+
+        <h1>Pakistan</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, reprehenderit quia deleniti, repellendus similique dolores voluptatum necessitatibus harum iure voluptates, praesentium illum eum ipsam adipisci eligendi ea laborum. Incidunt, eveniet?
+        </p>
+    </div>
+    <form action="" class="sub">
+        <input type="text" id="inp">
+        <button>submit</button>
+    </form>
+    <script>
+        $(document).ready(function() {
+
+            var a = $(".container").attr('id');
+            console.log(a);
+
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $(".sub").submit(function() {
+
+
+                var i = $("#inp").val();
+                alert(" hello " + i);
+
+            })
+
+        });
+    </script>
+
+
+</body>
+
+</html>

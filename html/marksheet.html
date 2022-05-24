@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 50px;
+    }
+    
+    form {
+        padding: 50px;
+        border: 2px solid black;
+        width: 500px;
+    }
+    
+    td {
+        padding: 20px;
+    }
+</style>
+
+<body>
+
+
+
+    <div>
+        <label for="">Name :</label><input id="name" type="text">
+    </div>
+    <div>
+        <label for="">Urdu :</label><input id="u" type="text">
+    </div>
+    <div>
+        <label for="">English :</label><input id="e" type="text">
+    </div>
+    <div>
+        <label for="">Maths :</label><input id="m" type="text">
+    </div>
+    <div>
+        <label for="">Chemistry :</label><input id="c" type="text">
+    </div>
+    <div>
+        <label for="">Physics :</label><input id="p" type="text">
+    </div>
+    <input id="sub" onclick="fun()" type="submit">
+
+
+
+
+
+    <table border="2px ">
+        <tr>
+            <td>Name</td>
+            <td>Urdu</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>Obtain</td>
+            <td>Total</td>
+        </tr>
+        <tr>
+            <td id="N"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <script>
+        function fun() {
+            var name = document.getElementById("name").value;
+            document.getElementById("N").innerHTML = name;
+        }
+    </script>
+</body>
+
+</html>

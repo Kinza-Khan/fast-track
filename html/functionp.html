@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+        }
+        
+        .main2 {
+            height: 300px;
+            width: 390;
+            border: 1px solid black;
+        }
+        
+        .main3 {
+            height: 97px;
+            width: 400px;
+            border: 1px solid black;
+            display: flex;
+        }
+        
+        .d1,
+        .d2,
+        .d3,
+        .d4 {
+            height: 97px;
+            width: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <div class="main2">
+            <img src="images/a.jpg" id="xyz" height="300px" width="400px" alt="">
+        </div>
+        <div class="main3">
+            <div class="d1"><img src="images/Sliders-Fragrqance-1.jpg" onclick="fun(this.src)" height="97px" width="100px" alt=""></div>
+            <div class="d2"><img src="images/images (1).jpg" height="97px" onclick="fun(this.src)" width="100px" alt=""></div>
+            <div class="d3"><img src="images/images (2).jpg" height="97px" width="100px" onclick="fun(this.src)" alt=""></div>
+            <div class="d4"><img src="images/images.jpg" height="97px" width="92px" onclick="fun(this.src)" alt=""></div>
+        </div>
+
+
+    </div>
+    <script>
+        function fun(abc) {
+
+            document.getElementById("xyz").src = abc;
+
+        }
+    </script>
+</body>
+
+</html>

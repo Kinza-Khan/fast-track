@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 100%;
+            display: grid;
+            border: 2px solid black;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px 200px 300px 100px;
+            grid-gap: 10px;
+            /* height: 500px; */
+        }
+        
+        .d {
+            /* height: 200px;
+            width: 200px; */
+            border: 2px solid red;
+            /* margin: 5px; */
+        }
+        
+        .d1 {
+            grid-column: 1/-1;
+        }
+        
+        .d5 {
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        
+        .d6 {
+            grid-column: 1/4;
+        }
+        
+        .d7 {
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est totam doloribus similique explicabo voluptatum beatae consequuntur excepturi tempore voluptatibus? Dolore eveniet qui temporibus mollitia perferendis quis nobis eligendi fugit accusantium.</p>
+
+    <!-- Daraz-MALL -->
+    <section class="Daraz-MALL">
+        <div class="main">
+            <div class="d d1">a</div>
+            <div class="d d2">b</div>
+            <div class="d d3">c</div>
+            <div class="d d4">d</div>
+            <div class="d d5">e</div>
+            <div class="d d6">f</div>
+            <div class="d d7">g</div>
+            <!-- <div class="d d8">h</div>
+        <div class="d d9">i</div> -->
+        </div>
+    </section>
+
+
+</body>
+
+</html>
